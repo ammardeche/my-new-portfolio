@@ -1,0 +1,232 @@
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1420px;
+}
+@theme {
+  --color-bg: #00031c;
+  --color-white: #ffffff;
+  --color-primary: #110fdf;
+  --color-icon: #4383fc;
+  --color-dark-blue: #12152c;
+  --color-primary-dark: #2621b4;
+  --color-red: #f93939;
+  --color-green: #016d39;
+  --color-gray: gray;
+  --color-black: black;
+}
+:root {
+  --color-bg: #00031c;
+  --color-white: #ffffff;
+  --color-primary: #110fdf;
+  --color-icon: #4383fc;
+  --color-primary-dark: #2621b4;
+  --color-dark-blue: #12152c;
+  --color-red: #f93939;
+  --color-green: #016d39;
+  --color-gray: gray;
+  --color-black: black;
+}
+
+@utility row {
+  @apply flex flex-row;
+}
+
+@utility row-center {
+  @apply flex flex-row justify-center;
+}
+
+@utility row-start {
+  @apply flex flex-row justify-start;
+}
+
+@utility row-end {
+  @apply flex flex-row justify-end;
+}
+
+@utility row-between {
+  @apply flex flex-row justify-between;
+}
+
+@utility row-center-center {
+  @apply flex flex-row justify-center items-center;
+}
+
+@utility row-center-start {
+  @apply flex flex-row justify-center items-start;
+}
+
+@utility row-center-end {
+  @apply flex flex-row justify-center items-end;
+}
+
+@utility row-start-center {
+  @apply flex flex-row justify-start items-center;
+}
+
+@utility row-start-start {
+  @apply flex flex-row justify-start items-start;
+}
+
+@utility row-start-end {
+  @apply flex flex-row justify-start items-end;
+}
+
+@utility row-end-center {
+  @apply flex flex-row justify-end items-center;
+}
+
+@utility row-end-start {
+  @apply flex flex-row justify-end items-start;
+}
+
+@utility row-end-end {
+  @apply flex flex-row justify-end items-end;
+}
+
+@utility row-between-center {
+  @apply flex flex-row justify-between items-center;
+}
+
+@utility row-between-start {
+  @apply flex flex-row justify-between items-start;
+}
+
+@utility row-between-end {
+  @apply flex flex-row justify-between items-end;
+}
+
+@utility row-around-center {
+  @apply flex flex-row justify-around items-center;
+}
+
+@utility row-around-start {
+  @apply flex flex-row justify-around items-start;
+}
+
+@utility row-around-end {
+  @apply flex flex-row justify-around items-end;
+}
+
+@utility col {
+  @apply flex flex-col;
+}
+
+@utility col-center {
+  @apply flex flex-col justify-center;
+}
+
+@utility col-start {
+  @apply flex flex-col justify-start;
+}
+
+@utility col-end {
+  @apply flex flex-col justify-end;
+}
+
+@utility col-between {
+  @apply flex flex-col justify-between;
+}
+
+@utility col-center-center {
+  @apply flex flex-col justify-center items-center;
+}
+
+@utility col-center-start {
+  @apply flex flex-col justify-center items-start;
+}
+
+@utility col-center-end {
+  @apply flex flex-col justify-center items-end;
+}
+
+@utility col-start-center {
+  @apply flex flex-col justify-start items-center;
+}
+
+@utility col-start-start {
+  @apply flex flex-col justify-start items-start;
+}
+
+@utility col-start-end {
+  @apply flex flex-col justify-start items-end;
+}
+
+@utility col-end-center {
+  @apply flex flex-col justify-end items-center;
+}
+
+@utility col-end-start {
+  @apply flex flex-col justify-end items-start;
+}
+
+@utility col-end-end {
+  @apply flex flex-col justify-end items-end;
+}
+
+@utility col-between-center {
+  @apply flex flex-col justify-between items-center;
+}
+
+@utility col-between-start {
+  @apply flex flex-col justify-between items-start;
+}
+
+@utility col-between-end {
+  @apply flex flex-col justify-between items-end;
+}
+
+@utility text-base-res {
+  @apply text-sm xl:text-base;
+}
+
+@utility text-lg-res {
+  @apply text-base xl:text-lg;
+}
+@utility text-xl-res {
+  @apply text-lg md:text-xl;
+}
+@utility text-22px-res {
+  @apply text-lg md:text-xl md:text-[22px];
+}
+@utility text-2xl-res {
+  @apply text-lg md:text-xl xl:text-2xl;
+}
+@utility text-28px-res {
+  @apply text-xl lg:text-2xl xl:text-3xl xl:text-[28px] !leading-8;
+}
+@utility text-3xl-res {
+  @apply text-xl md:text-2xl xl:text-3xl;
+}
+@utility text-4xl-res {
+  @apply text-2xl md:text-3xl xl:text-4xl;
+}
+@utility text-42-res {
+  @apply text-2xl md:text-3xl xl:text-[42px];
+}
+@utility text-5xl-res {
+  @apply text-3xl md:text-4xl xl:text-5xl;
+}
+@utility text-52-res {
+  @apply text-3xl md:text-4xl xl:text-[52px];
+}
+@utility text-6xl-res {
+  @apply text-4xl md:text-5xl xl:text-6xl;
+}
+@utility text-7xl-res {
+  @apply text-5xl md:text-6xl xl:text-7xl;
+}
+@utility text-8xl-res {
+  @apply text-6xl md:text-7xl xl:text-8xl;
+}
+@utility text-9xl-res {
+  @apply text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl;
+}
+@utility absolute-cover {
+  @apply absolute top-0 left-0 right-0 bottom-0;
+}
