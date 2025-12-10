@@ -1,33 +1,115 @@
-<section data-aos="fade-up" class="py-60">
-  <div class="container mx-auto">
-    <div class="row-center-center">
-      <img class="absolute -z-20" src="/images/bg-effect.png" alt="" />
+<section data-aos="fade-up" class="md:py-80 py-60">
+  <div class="container mx-auto px-4 xs:px-6 lg:px-8">
+    <div class="row-center-center relative">
+      <!-- Background effect - only visible on larger screens -->
+      <img
+        class="absolute -z-20 w-full max-w-4xl mx-auto opacity-40 xs:opacity-60 sm:opacity-80 hidden sm:block"
+        src="/images/bg-effect.png"
+        alt="Background effect"
+      />
 
-      <div class="col gap-2 z-20 text-center">
-        <p class="uppercase font-medium">About Me</p>
-        <p class="text-5xl font-semibold leading-[150%]">Who Am I?</p>
-        <p class="!text-gray-300">A Developer in Progress</p>
+      <div class="col gap-2 xs:gap-3 sm:gap-4 z-20 text-center px-4">
+        <p class="uppercase font-medium text-sm xs:text-base tracking-wider">About Me</p>
+        <p class="text-3xl xs:text-4xl sm:text-5xl font-semibold leading-[140%] xs:leading-[150%]">
+          Who Am I?
+        </p>
+        <p class="!text-gray-300 text-base xs:text-lg sm:text-xl mt-1 xs:mt-2">
+          A Developer in Progress
+        </p>
       </div>
     </div>
 
-    <div class="mt-8 col gap-4">
-      <div class="row-center-center">
-        <img class="w-1/4 rounded-full" src="/images/Me.jpeg" alt="" />
+    <div class="mt-6 xs:mt-8 sm:mt-10 lg:mt-12 col gap-4 xs:gap-6 sm:gap-8">
+      <!-- Profile Image -->
+      <div class="row-center-center px-4">
+        <div class="relative group">
+          <img
+            class="w-32 h-32 xs:w-40 xs:h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-primary/20 object-cover shadow-2xl shadow-primary/10 group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-105 group-hover:border-primary/30"
+            src="/images/Me.jpeg"
+            alt="Ammar - Web Developer"
+          />
+          <!-- Glow effect on hover -->
+          <div
+            class="absolute inset-0 rounded-full bg-primary/10 blur-xl group-hover:bg-primary/20 transition-all duration-500 -z-10"
+          ></div>
+        </div>
       </div>
 
-      <div class="text-center">
-        <p class="leading-[180%] text-lg">
-          I’m Ammar, a web developer from Algeria, currently living and studying Computer Science in
-          Poland. A journey that began with simple web pages has turned into a clear vision:
-          creating products that solve real problems. Technology isn’t just a career path — it’s a
-          way to express creativity, intelligence, and purpose. Moving to Poland opened a new
-          chapter: learning new technologies, improving as a developer, and continuously challenging
-          limits. Mistakes became lessons, and every challenge turned into motivation to grow
-          stronger — both technically and personally. Passion is the fuel behind the work:
-          experimenting with ideas, building modern solutions, and always pushing skills forward.
-          The mission is simple — transform hard work into real expertise and create digital
-          experiences that bring value to people.
-        </p>
+      <!-- Bio Text -->
+      <div class="text-center px-4">
+        <div class="max-w-3xl mx-auto">
+          <p
+            class="leading-[160%] xs:leading-[170%] sm:leading-[180%] text-sm xs:text-base sm:text-lg text-gray-200"
+          >
+            I'm Ammar, a web developer from Algeria, currently living and studying Computer Science
+            in Poland. A journey that began with simple web pages has turned into a clear vision:
+            creating products that solve real problems.
+          </p>
+
+          <p
+            class="leading-[160%] xs:leading-[170%] sm:leading-[180%] text-sm xs:text-base sm:text-lg text-gray-200 mt-4 xs:mt-6"
+          >
+            Technology isn't just a career path — it's a way to express creativity, intelligence,
+            and purpose. Moving to Poland opened a new chapter: learning new technologies, improving
+            as a developer, and continuously challenging limits.
+          </p>
+
+          <p
+            class="leading-[160%] xs:leading-[170%] sm:leading-[180%] text-sm xs:text-base sm:text-lg text-gray-200 mt-4 xs:mt-6"
+          >
+            Mistakes became lessons, and every challenge turned into motivation to grow stronger —
+            both technically and personally. Passion is the fuel behind the work: experimenting with
+            ideas, building modern solutions, and always pushing skills forward.
+          </p>
+
+          <p
+            class="leading-[160%] xs:leading-[170%] sm:leading-[180%] text-sm xs:text-base sm:text-lg text-gray-200 mt-4 xs:mt-6 font-medium"
+          >
+            The mission is simple — transform hard work into real expertise and create digital
+            experiences that bring value to people.
+          </p>
+        </div>
+
+        <!-- Optional Stats or Highlights -->
+        <div
+          class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 xs:gap-6 mt-8 xs:mt-10 sm:mt-12"
+        >
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 xs:p-5">
+            <p class="text-2xl xs:text-3xl font-bold text-primary">3+</p>
+            <p class="text-sm xs:text-base mt-1">Years Experience</p>
+          </div>
+
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 xs:p-5">
+            <p class="text-2xl xs:text-3xl font-bold text-primary">20+</p>
+            <p class="text-sm xs:text-base mt-1">Projects Completed</p>
+          </div>
+
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 xs:p-5">
+            <p class="text-2xl xs:text-3xl font-bold text-primary">2</p>
+            <p class="text-sm xs:text-base mt-1">Countries Lived</p>
+          </div>
+
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 xs:p-5">
+            <p class="text-2xl xs:text-3xl font-bold text-primary">∞</p>
+            <p class="text-sm xs:text-base mt-1">Passion for Code</p>
+          </div>
+        </div>
+
+        <!-- Optional CTA Buttons -->
+        <div class="row-center-center gap-3 xs:gap-4 mt-8 xs:mt-10 flex-col xs:flex-row">
+          <button
+            [routerLink]="['/project']"
+            class="btn capitalize px-6 xs:px-8 py-3 rounded-full font-medium text-sm xs:text-base w-full xs:w-auto transition-all duration-300 hover:scale-105"
+          >
+            View My Work
+          </button>
+          <button
+            [routerLink]="['/contact-me']"
+            class="view-btn capitalize px-6 xs:px-8 py-3 rounded-full font-medium text-sm xs:text-base w-full xs:w-auto border border-white/20 transition-all duration-300 hover:scale-105 hover:border-primary"
+          >
+            Let's Connect
+          </button>
+        </div>
       </div>
     </div>
   </div>

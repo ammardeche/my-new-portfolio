@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-project',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './project.html',
   styleUrl: './project.scss',
 })
-export class Project {
-
-}
+export class Project {}

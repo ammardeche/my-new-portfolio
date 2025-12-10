@@ -1,9 +1,10 @@
 import { AfterViewInit, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import AOS from 'aos';
 
 @Component({
   selector: 'app-service',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './service.html',
   styleUrl: './service.scss',
 })

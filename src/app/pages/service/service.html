@@ -1,99 +1,216 @@
-<section data-aos="fade-up" class="py-60 h-screen">
-  <div class="container mx-auto">
-    <div class="row-center-center">
-      <img class="absolute -z-20" src="/images/bg-effect2.png" alt="" />
+<section data-aos="fade-up" class="md:py-80 py-60 min-h-screen flex items-center">
+  <div class="container mx-auto px-4 xs:px-6 lg:px-8">
+    <!-- Header Section -->
+    <div class="row-center-center relative mb-8 xs:mb-10 sm:mb-12 lg:mb-16">
+      <!-- Background effect - responsive visibility -->
+      <img
+        class="absolute -z-20 w-full max-w-4xl mx-auto opacity-30 xs:opacity-40 sm:opacity-50 hidden sm:block"
+        src="/images/bg-effect2.png"
+        alt="Services background effect"
+      />
 
-      <div class="col gap-2 z-20 text-center">
-        <p class="uppercase font-medium">services</p>
-        <p class="text-5xl font-semibold leading-[150%]">
-          Digital solutions built with <br />
-          precision and creativity
+      <div class="col gap-2 xs:gap-3 sm:gap-4 z-20 text-center px-4">
+        <p class="uppercase font-medium text-sm xs:text-base tracking-wider text-primary">
+          Services
         </p>
-        <p class="!text-gray-300">
+        <p
+          class="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[140%] xs:leading-[150%]"
+        >
+          Digital solutions built with
+          <span class="block xs:inline"> precision and creativity </span>
+        </p>
+        <p class="!text-gray-300 text-base xs:text-lg sm:text-xl mt-2 xs:mt-3 max-w-2xl mx-auto">
           Crafting fast, modern and user-focused applications for web and mobile.
         </p>
       </div>
     </div>
 
-    <div class="mt-8 px-4 border-[1px] rounded-xl border-[#161C44] py-6 grid grid-cols-3 gap-4">
-      <!-- card -->
-      <div class="col gap-4 card py-6 px-6 rounded-xl">
-        <div class="row-between-center">
-          <div class="row-center-center gap-2">
-            <img src="/images/serv.png" alt="" />
-            <p class="capitalize text-xl font-bold">Web Applications</p>
+    <!-- Services Grid -->
+    <div
+      class="mt-8 xs:mt-10 sm:mt-12 px-4 xs:px-6 border border-[#161C44] rounded-2xl sm:rounded-3xl py-8 xs:py-10 sm:py-12 bg-gradient-to-b from-transparent to-[#0a0d1f]/20"
+    >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6">
+        <!-- Card 1: Web Applications -->
+        <div
+          class="group col gap-4 xs:gap-5 card py-6 xs:py-7 sm:py-8 px-5 xs:px-6 sm:px-8 rounded-xl xs:rounded-2xl bg-[#0a0d1f]/50 border border-white/5 hover:border-primary/30 hover:bg-[#0a0d1f]/70 transition-all duration-500 hover:-translate-y-2"
+        >
+          <div class="row-between-center">
+            <div class="row-center-center gap-3 xs:gap-4">
+              <div
+                class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <img
+                  src="/images/serv.png"
+                  alt="Web Applications icon"
+                  class="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <p
+                class="capitalize text-lg xs:text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300"
+              >
+                Web Applications
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
+          <div class="text-gray-300 text-sm xs:text-base leading-relaxed">
             Scalable and secure web apps built for real performance and smooth user interaction.
           </div>
         </div>
-      </div>
 
-      <div class="col gap-4 card py-6 px-6 rounded-xl">
-        <div class="row-between-center">
-          <div class="row-center-center gap-2">
-            <img src="/images/serv.png" alt="" />
-            <p class="capitalize text-xl font-bold">Mobile Applications</p>
+        <!-- Card 2: Mobile Applications -->
+        <div
+          class="group col gap-4 xs:gap-5 card py-6 xs:py-7 sm:py-8 px-5 xs:px-6 sm:px-8 rounded-xl xs:rounded-2xl bg-[#0a0d1f]/50 border border-white/5 hover:border-primary/30 hover:bg-[#0a0d1f]/70 transition-all duration-500 hover:-translate-y-2"
+        >
+          <div class="row-between-center">
+            <div class="row-center-center gap-3 xs:gap-4">
+              <div
+                class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <img
+                  src="/images/serv.png"
+                  alt="Mobile Applications icon"
+                  class="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <p
+                class="capitalize text-lg xs:text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300"
+              >
+                Mobile Applications
+              </p>
+            </div>
+          </div>
+          <div class="text-gray-300 text-sm xs:text-base leading-relaxed">
+            Cross-platform apps that deliver a clean, fast, and reliable mobile experience.
           </div>
         </div>
 
-        <div>
-          <div>Cross-platform apps that deliver a clean, fast, and reliable mobile experience.</div>
-        </div>
-      </div>
-
-      <div class="col gap-4 card py-6 px-6 rounded-xl">
-        <div class="row-between-center">
-          <div class="row-center-center gap-2">
-            <img src="/images/serv.png" alt="" />
-            <p class="capitalize text-xl font-bold">Landing Pages</p>
+        <!-- Card 3: Landing Pages -->
+        <div
+          class="group col gap-4 xs:gap-5 card py-6 xs:py-7 sm:py-8 px-5 xs:px-6 sm:px-8 rounded-xl xs:rounded-2xl bg-[#0a0d1f]/50 border border-white/5 hover:border-primary/30 hover:bg-[#0a0d1f]/70 transition-all duration-500 hover:-translate-y-2"
+        >
+          <div class="row-between-center">
+            <div class="row-center-center gap-3 xs:gap-4">
+              <div
+                class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <img
+                  src="/images/serv.png"
+                  alt="Landing Pages icon"
+                  class="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <p
+                class="capitalize text-lg xs:text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300"
+              >
+                Landing Pages
+              </p>
+            </div>
+          </div>
+          <div class="text-gray-300 text-sm xs:text-base leading-relaxed">
+            High-quality landing pages designed to convert and communicate ideas clearly.
           </div>
         </div>
 
-        <div>
-          <div>High-quality landing pages designed to convert and communicate ideas clearly.</div>
-        </div>
-      </div>
-
-      <div class="col gap-4 card py-6 px-6 rounded-xl">
-        <div class="row-between-center">
-          <div class="row-center-center gap-2">
-            <img src="/images/serv.png" alt="" />
-            <p class="capitalize text-xl font-bold">UI / UX Design</p>
+        <!-- Card 4: UI/UX Design -->
+        <div
+          class="group col gap-4 xs:gap-5 card py-6 xs:py-7 sm:py-8 px-5 xs:px-6 sm:px-8 rounded-xl xs:rounded-2xl bg-[#0a0d1f]/50 border border-white/5 hover:border-primary/30 hover:bg-[#0a0d1f]/70 transition-all duration-500 hover:-translate-y-2"
+        >
+          <div class="row-between-center">
+            <div class="row-center-center gap-3 xs:gap-4">
+              <div
+                class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <img
+                  src="/images/serv.png"
+                  alt="UI/UX Design icon"
+                  class="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <p
+                class="capitalize text-lg xs:text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300"
+              >
+                UI / UX Design
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
+          <div class="text-gray-300 text-sm xs:text-base leading-relaxed">
             User-friendly layouts that balance creativity, usability, and a clean visual identity.
           </div>
         </div>
-      </div>
 
-      <div class="col gap-4 card py-6 px-6 rounded-xl">
-        <div class="row-between-center">
-          <div class="row-center-center gap-2">
-            <img src="/images/serv.png" alt="" />
-            <p class="capitalize text-xl font-bold">API Integration</p>
+        <!-- Card 5: API Integration -->
+        <div
+          class="group col gap-4 xs:gap-5 card py-6 xs:py-7 sm:py-8 px-5 xs:px-6 sm:px-8 rounded-xl xs:rounded-2xl bg-[#0a0d1f]/50 border border-white/5 hover:border-primary/30 hover:bg-[#0a0d1f]/70 transition-all duration-500 hover:-translate-y-2"
+        >
+          <div class="row-between-center">
+            <div class="row-center-center gap-3 xs:gap-4">
+              <div
+                class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <img
+                  src="/images/serv.png"
+                  alt="API Integration icon"
+                  class="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <p
+                class="capitalize text-lg xs:text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300"
+              >
+                API Integration
+              </p>
+            </div>
+          </div>
+          <div class="text-gray-300 text-sm xs:text-base leading-relaxed">
+            Connecting your app to powerful services and databases for smarter functionality.
           </div>
         </div>
 
-        <div>Connecting your app to powerful services and databases for smarter functionality.</div>
-      </div>
-
-      <div class="col gap-4 card py-6 px-6 rounded-xl">
-        <div class="row-between-center">
-          <div class="row-center-center gap-2">
-            <img src="/images/serv.png" alt="" />
-            <p class="capitalize text-xl font-bold">Maintenance & Optimization</p>
+        <!-- Card 6: Maintenance & Optimization -->
+        <div
+          class="group col gap-4 xs:gap-5 card py-6 xs:py-7 sm:py-8 px-5 xs:px-6 sm:px-8 rounded-xl xs:rounded-2xl bg-[#0a0d1f]/50 border border-white/5 hover:border-primary/30 hover:bg-[#0a0d1f]/70 transition-all duration-500 hover:-translate-y-2"
+        >
+          <div class="row-between-center">
+            <div class="row-center-center gap-3 xs:gap-4">
+              <div
+                class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <img
+                  src="/images/serv.png"
+                  alt="Maintenance & Optimization icon"
+                  class="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <p
+                class="capitalize text-lg xs:text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300"
+              >
+                Maintenance & Optimization
+              </p>
+            </div>
+          </div>
+          <div class="text-gray-300 text-sm xs:text-base leading-relaxed">
+            Keeping your product secure, up-to-date, and running at top performance.
           </div>
         </div>
+      </div>
 
-        <div>
-          <div>Keeping your product secure, up-to-date, and running at top performance.</div>
+      <!-- CTA Section -->
+      <div class="text-center mt-10 xs:mt-12 sm:mt-16">
+        <p class="text-gray-300 text-base xs:text-lg sm:text-xl mb-6 xs:mb-8">
+          Need a custom solution or have a specific project in mind?
+        </p>
+        <div class="flex flex-col xs:flex-row gap-4 justify-center">
+          <button
+            [routerLink]="['/contact-me']"
+            class="btn capitalize px-6 xs:px-8 py-3 xs:py-4 rounded-full font-medium text-sm xs:text-base transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
+          >
+            Let's Discuss Your Project
+          </button>
+          <button
+            [routerLink]="['/project']"
+            class="view-btn capitalize px-6 xs:px-8 py-3 xs:py-4 rounded-full font-medium text-sm xs:text-base border border-white/20 transition-all duration-300 hover:scale-105 hover:border-primary"
+          >
+            View Case Studies
+          </button>
         </div>
       </div>
     </div>
