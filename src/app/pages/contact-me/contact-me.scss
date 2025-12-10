@@ -1,0 +1,66 @@
+.contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact-card {
+  background: rgba(10, 15, 35, 0.85);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #0a0d1f;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 14px;
+    outline: none;
+  }
+
+  textarea {
+    height: 120px;
+    resize: none;
+  }
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #4f4fff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:disabled {
+  background: #3a3a6e;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background: #3d3df1;
+}

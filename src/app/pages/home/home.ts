@@ -10,7 +10,7 @@ import Aos from 'aos';
 
 @Component({
   selector: 'app-home',
-  imports: [NgClass, NgxTypedJsModule],
+  imports: [NgxTypedJsModule],
   templateUrl: './home.html',
   styleUrl: './home.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

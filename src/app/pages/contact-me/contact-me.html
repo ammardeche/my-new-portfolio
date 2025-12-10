@@ -1,4 +1,4 @@
-<section data-aos="fade-up" class="py-80 h-screen">
+<section data-aos="fade-up" class="py-60">
   <div class="container mx-auto">
     <div class="row-center-center">
       <img class="absolute -z-20" src="/images/Header-1.png" alt="" />
@@ -7,7 +7,7 @@
         <p class="uppercase font-medium">Contact Me</p>
         <p class="text-5xl font-semibold leading-[150%]">Let’s Build Something Great Together</p>
         <p class="!text-gray-300">
-          IHave a project idea or just want to connect? <br />
+          Have a project idea or just want to connect? <br />
           Feel free to reach out — always happy to talk about tech, design, and new opportunities.
         </p>
       </div>
@@ -15,7 +15,7 @@
 
     <div class="grid md:grid-cols-3 gap-8 mt-28">
       <!-- Card 1 -->
-
+      <!-- email -->
       <div
         class="bg-[#00041f] border-[1px] border-white/9 p-6 rounded-2xl relative overflow-hidden text-white"
       >
@@ -43,7 +43,7 @@
           <div class="text-white text-lg">ammardeche.48@gmail.com</div>
         </div>
       </div>
-
+      <!-- Location -->
       <div
         class="bg-[#00041f] border-[1px] border-white/9 p-6 rounded-2xl relative overflow-hidden text-white"
       >
@@ -71,7 +71,7 @@
           <div class="text-white text-lg">kielce, poland</div>
         </div>
       </div>
-
+      <!-- call -->
       <div
         class="bg-[#00041f] border-[1px] border-white/9 p-6 rounded-2xl relative overflow-hidden text-white"
       >
@@ -100,5 +100,81 @@
         </div>
       </div>
     </div>
+
+    <!-- form -->
+
+    <form
+      (ngSubmit)="onSubmit()"
+      [formGroup]="contactForm"
+      class="mx-auto mt-20 bg-[#00041f] border border-white/10 rounded-2xl p-10 w-full max-w-lg text-white relative overflow-hidden"
+    >
+      <p class="uppercase text-center mb-5 text-2xl">contact me</p>
+      <div class="relative z-10 space-y-6">
+        <!-- NAME -->
+        <div>
+          <label class="block text-sm mb-2 text-gray-300">Full Name</label>
+          <input
+            formControlName="name"
+            type="text"
+            placeholder="Enter your name"
+            class="w-full bg-[#000633] px-4 py-3 rounded-xl outline-none border border-transparent focus:border-blue-600 transition"
+          />
+          @if (contactForm.controls['name'].touched && contactForm.controls['name'].invalid) {
+          <p class="text-red-500 text-sm mt-1">Name is required.</p>
+          }
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+          <label class="block text-sm mb-2 text-gray-300">Email Address</label>
+          <input
+            formControlName="email"
+            type="email"
+            placeholder="example@mail.com"
+            class="w-full bg-[#000633] px-4 py-3 rounded-xl outline-none border border-transparent focus:border-blue-600 transition"
+          />
+          @if (contactForm.controls['email'].touched && contactForm.controls['email'].invalid) {
+          <p class="text-red-500 text-sm mt-1">
+            @if (contactForm.controls['email'].errors?.['required']) { Email is required. } @else if
+            (contactForm.controls['email'].errors?.['email']) { Invalid email format. }
+          </p>
+          }
+        </div>
+
+        <!-- MESSAGE -->
+        <div>
+          <label class="block text-sm mb-2 text-gray-300">Message</label>
+          <textarea
+            formControlName="message"
+            rows="5"
+            placeholder="Write your message here..."
+            class="w-full bg-[#000633] px-4 py-3 rounded-xl outline-none border border-transparent focus:border-blue-600 transition resize-none"
+          ></textarea>
+          @if (contactForm.controls['message'].touched && contactForm.controls['message'].invalid) {
+          <p class="text-red-500 text-sm mt-1">Message cannot be empty.</p>
+          }
+        </div>
+
+        <!-- STATUS MESSAGES -->
+        @if (isSending) {
+        <p class="text-blue-400 text-center">Sending...</p>
+        } @if (isSent) {
+        <p class="text-primary text-center">Message sent successfully.</p>
+        } @if (isError) {
+        <p class="text-red-500 text-center">Failed to send. Try again later.</p>
+        }
+
+        <!-- BUTTON -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 transition px-10 py-3 rounded-xl font-medium disabled:opacity-50"
+            [disabled]="isSending"
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </section>

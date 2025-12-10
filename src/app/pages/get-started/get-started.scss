@@ -1,0 +1,18 @@
+.select-wrapper {
+  position: relative;
+
+  &::after {
+    content: '▼';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  select:focus + &::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}

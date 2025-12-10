@@ -5,6 +5,7 @@ import { Pricing } from './pages/pricing/pricing';
 import { Service } from './pages/service/service';
 import { Project } from './pages/project/project';
 import { ContactMe } from './pages/contact-me/contact-me';
+import { GetStarted } from './pages/get-started/get-started';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'service', component: Service },
   { path: 'project', component: Project },
   { path: 'contact-me', component: ContactMe },
+  { path: 'get-started', component: GetStarted },
 ];
