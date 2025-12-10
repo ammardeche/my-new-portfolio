@@ -5,13 +5,13 @@
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-2xl: 1420px;
+  --breakpoint-xl: 1100px;
+  --breakpoint-2xl: 1220px;
 }
 @theme {
   --color-bg: #00031c;
   --color-white: #ffffff;
-  --color-primary: #110fdf;
+  --color-primary: #194fff;
   --color-icon: #4383fc;
   --color-dark-blue: #12152c;
   --color-primary-dark: #2621b4;
@@ -23,7 +23,7 @@
 :root {
   --color-bg: #00031c;
   --color-white: #ffffff;
-  --color-primary: #110fdf;
+  --color-primary: #194fff;
   --color-icon: #4383fc;
   --color-primary-dark: #2621b4;
   --color-dark-blue: #12152c;

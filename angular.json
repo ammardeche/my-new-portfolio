@@ -31,7 +31,10 @@
             ],
             "styles": [
               "src/tailwind.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/assets/css/custom.scss",
+              "src/app/assets/css/element.scss",
+              "src/app/assets/css/fonts.scss"
             ]
           },
           "configurations": {
