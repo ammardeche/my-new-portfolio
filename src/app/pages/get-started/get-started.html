@@ -2,15 +2,9 @@
   <div class="container mx-auto px-4">
     <!-- Header Section -->
     <div class="row-center-center relative mb-12 lg:mb-20">
-      <img
-        class="absolute -z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-auto opacity-10"
-        src="/images/bg-effect2.png"
-        alt="background effect"
-      />
+      <img class="absolute" src="/images/bg-effect2.png" alt="background effect" />
       <div class="col gap-4 z-20 text-center">
-        <p class="uppercase font-medium text-sm tracking-widest text-[#194fff]">
-          Let's Get Started
-        </p>
+        <p class="uppercase font-medium text-lg tracking-widest">Let's Get Started</p>
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           Build Your Dream Website
           <span
@@ -429,6 +423,7 @@
                 </button>
 
                 <button
+                  (click)="checkEmail()"
                   class="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-xl transition-all duration-300 border border-gray-700 flex items-center justify-center gap-2"
                 >
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
