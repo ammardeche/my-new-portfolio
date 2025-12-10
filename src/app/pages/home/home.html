@@ -4,7 +4,7 @@
       <div
         class="project-label row-between-center gap-3.5 text-center w-fit px-8 py-2 rounded-full"
       >
-        <p class="label">Check out my latest projects</p>
+        <button [routerLink]="['/project']" class="label">Check out my latest projects</button>
         <svg
           class="arrow w-4 h-4"
           fill="none"
@@ -41,8 +41,15 @@
       </div>
 
       <div class="row-center-center gap-2">
-        <button class="btn px-7 py-3 rounded-full border-[1px] border-white">View Projects</button>
-        <button class="view-btn px-7 py-3 rounded-full">Get in Touch</button>
+        <button
+          [routerLink]="['/project']"
+          class="btn px-7 py-3 rounded-full border-[1px] border-white"
+        >
+          View Projects
+        </button>
+        <button [routerLink]="['/contact-me']" class="view-btn px-7 py-3 rounded-full">
+          Get in Touch
+        </button>
       </div>
 
       <div class="text-gray-300">3+ Years of Experience</div>

@@ -7,10 +7,11 @@ import 'aos/dist/aos.css';
 
 import { register } from 'swiper/element/bundle';
 import Aos from 'aos';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [NgxTypedJsModule],
+  imports: [NgxTypedJsModule, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
