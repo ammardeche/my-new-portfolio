@@ -33,6 +33,7 @@
               "src/tailwind.css",
               "src/styles.scss",
               "src/app/assets/css/custom.scss",
+              "node_modules/aos/dist/aos.css",
               "src/app/assets/css/element.scss",
               "src/app/assets/css/fonts.scss"
             ]
